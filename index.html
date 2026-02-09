@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chitra M | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shakthi M | Data & AI Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header>
-    <h1>Chitra M</h1>
-    <p>Aspiring Data Analyst | AI & ML Enthusiast</p>
-</header>
+<!-- NAVBAR -->
+<nav>
+  <h2>Shakthi</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a former Senior Application Support Engineer with 6 years of experience
-        in production monitoring and system analysis. I am transitioning into
-        Data Analytics and AI, with hands-on experience in Python, SQL, Excel,
-        and machine learning projects.
-    </p>
+<!-- HERO FRAME -->
+<section class="hero">
+  <div class="hero-card">
+    <h1>Shakthi M</h1>
+    <p>Data Analyst • AI & ML Enthusiast</p>
+    <a class="btn" href="#projects">View My Work</a>
+  </div>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Python, SQL</li>
-        <li>Excel, Statistics</li>
-        <li>Pandas, NumPy</li>
-        <li>Machine Learning (Regression, Time Series)</li>
-        <li>Datadog, Nagios</li>
-    </ul>
+<!-- ABOUT FRAME -->
+<section id="about" class="frame">
+  <h2>About Me</h2>
+  <p>
+    Former Senior Application Support Engineer with 6 years of experience
+    working on production monitoring and system analytics.
+    Currently transitioning into Data Analytics and AI with hands-on
+    experience in Python, SQL, and Machine Learning.
+  </p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+<!-- SKILLS FRAME -->
+<section id="skills" class="frame grid">
+  <h2>Skills</h2>
+  <div class="card">Python • SQL</div>
+  <div class="card">Excel • Statistics</div>
+  <div class="card">Pandas • NumPy</div>
+  <div class="card">ML • Time Series</div>
+  <div class="card">SSM • Kalman Filter</div>
+  <div class="card">Datadog • Nagios</div>
+</section>
 
-    <div class="project">
-        <h3>House Price Prediction</h3>
-        <p>
-            Built a regression-based machine learning model to predict house prices.
-            Performed data cleaning, feature engineering, and model evaluation.
-        </p>
-        <p><strong>Tools:</strong> Python, Pandas, NumPy</p>
-    </div>
+<!-- PROJECTS FRAME -->
+<section id="projects" class="frame grid">
+  <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Time Series Analysis (SSM & Kalman Filter)</h3>
-        <p>
-            Implemented State Space Models and Kalman Filter to forecast time-dependent data
-            and analyze trends and seasonality.
-        </p>
-        <p><strong>Tools:</strong> Python, NumPy</p>
-    </div>
+  <div class="card project">
+    <h3>House Price Prediction</h3>
+    <p>Regression model to predict house prices using historical data.</p>
+    <a href="https://github.com/yourusername/house-price-prediction" target="_blank">GitHub →</a>
+  </div>
 
-    <div class="project">
-        <h3>Search Engine – Tweak</h3>
-        <p>
-            Academic project developed using .NET with Google plugin integration
-            to improve search efficiency.
-        </p>
-    </div>
+  <div class="card project">
+    <h3>Time Series (SSM & Kalman)</h3>
+    <p>Forecasting using State Space Models and Kalman Filter.</p>
+    <a href="https://github.com/yourusername/time-series-kalman" target="_blank">GitHub →</a>
+  </div>
+
+  <div class="card project">
+    <h3>Monitoring Data Analysis</h3>
+    <p>Analyzed system metrics inspired by Datadog & Nagios.</p>
+    <a href="https://github.com/yourusername/monitoring-analysis" target="_blank">GitHub →</a>
+  </div>
 
 </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <h3>Senior Application Support Engineer – Pagonxt</h3>
-    <p>
-        Monitored application performance using Datadog and Nagios,
-        analyzed logs and metrics, and supported high-availability
-        payment systems.
-    </p>
+<!-- EXPERIENCE FRAME -->
+<section id="experience" class="frame">
+  <h2>Experience</h2>
+  <h3>Senior Application Support Engineer – Pagonxt</h3>
+  <p>
+    Monitored real-time production systems, analyzed metrics and logs,
+    supported high-availability payment platforms, and collaborated
+    with engineering teams to resolve incidents.
+  </p>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
+<!-- CONTACT FRAME -->
+<section id="contact" class="frame contact">
+  <h2>Contact</h2>
+  <a href="mailto:yourmail@gmail.com">📧 Email</a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
+  <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
 </section>
 
-<footer>
-    <p>© 2026 Chitra M</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
