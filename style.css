@@ -1,41 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f6f8;
-    color: #333;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
-header {
-    background-color: #1f2933;
-    color: white;
-    padding: 30px;
-    text-align: center;
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
 }
 
-section {
-    padding: 30px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-h2 {
-    color: #1f2933;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project {
-    margin-bottom: 20px;
+.hero-card {
+  background: rgba(255,255,255,0.1);
+  padding: 50px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(12px);
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #1f2933;
-    color: white;
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FRAMES */
+.frame {
+  margin: 80px 10%;
+  padding: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact a {
+  display: block;
+  margin: 10px 0;
+  color: #38bdf8;
+  text-decoration: none;
 }
